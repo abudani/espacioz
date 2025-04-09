@@ -112,6 +112,39 @@
       padding: 20px;
       border-left: 5px solid #00857c;
     }
+    .contact-form {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      max-width: 600px;
+      margin: 40px auto;
+    }
+    .contact-form h2 {
+      margin-bottom: 20px;
+      color: #00857c;
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+    .contact-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .contact-form button {
+      background-color: #00857c;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
     footer {
       background-color: #004f4a;
       color: white;
@@ -149,7 +182,7 @@
         <li>Diagnóstico digital para tu empresa</li>
       </ul>
     </div>
-    <img src="https://images.pexels.com/photos/6476589/pexels-photo-6476589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Visualización digital de procesos">
+    <img src="https://images.pexels.com/photos/6476255/pexels-photo-6476255.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Visualización digital de procesos">
   </section>
 
   <section class="section" id="nosotros">
@@ -164,11 +197,28 @@
         Después de 16 años trabajando con organizaciones del sector de impacto en América Latina, en ZIGLA decidimos compartir nuestro conocimiento y experiencia con empresas que buscan digitalizarse y tomar mejores decisiones con datos. Así nació Espacio Z.
       </div>
     </div>
-    <img src="https://images.pexels.com/photos/3861446/pexels-photo-3861446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Personas colaborando con tecnología digital">
+    <img src="https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Personas colaborando con datos digitales">
   </section>
 
-  <footer id="contacto">
+  <section class="contact-form" id="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="empresa">Empresa</label>
+      <input type="text" id="empresa" name="empresa">
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
     <p>© 2025 Espacio Z | Contacto: info@espacioz.com</p>
   </footer>
 </body>
 </html>
+
