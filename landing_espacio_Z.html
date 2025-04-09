@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espacio Z</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f9fa;
+      color: #2d2d2d;
+    }
+    header {
+      background-color: #ffffff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: 600;
+      color: #00857c;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #2d2d2d;
+      font-weight: 500;
+    }
+    .hero {
+      position: relative;
+      padding: 0;
+      text-align: center;
+      background-color: #e9f5f3;
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+      max-height: 600px;
+      object-fit: cover;
+      display: block;
+    }
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      background-color: rgba(0, 133, 124, 0.85);
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 600px;
+      width: 90%;
+    }
+    .hero-content h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .hero-content p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .btn {
+      padding: 12px 24px;
+      background-color: #ffffff;
+      color: #00857c;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .section {
+      padding: 80px 40px;
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 40px;
+    }
+    .section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #00857c;
+    }
+    .section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .section li {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+    .section img {
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .section-content {
+      flex: 1;
+    }
+    .zigla-note {
+      font-size: 18px;
+      margin-top: 20px;
+      background-color: #dff3f1;
+      padding: 20px;
+      border-left: 5px solid #00857c;
+    }
+    footer {
+      background-color: #004f4a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Espacio Z</div>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="https://images.pexels.com/photos/3183186/pexels-photo-3183186.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Equipo trabajando con tecnología">
+    <div class="hero-content">
+      <h1>Tecnología para crecer con datos</h1>
+      <p>Digitalizamos procesos, activamos decisiones. Impulsamos empresas con soluciones prácticas y a medida.</p>
+      <button class="btn">Quiero saber más</button>
+    </div>
+  </section>
+
+  <section class="section" id="servicios">
+    <div class="section-content">
+      <h2>¿Qué hacemos?</h2>
+      <ul>
+        <li>Implementación de Salesforce con automatización y capacitación</li>
+        <li>Recolección de datos y diseño de flujos operativos</li>
+        <li>Visualización de datos en Power BI y Looker Studio</li>
+        <li>Diagnóstico digital para tu empresa</li>
+      </ul>
+    </div>
+    <img src="https://images.pexels.com/photos/6476589/pexels-photo-6476589.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Visualización digital de procesos">
+  </section>
+
+  <section class="section" id="nosotros">
+    <div class="section-content">
+      <h2>¿Por qué Espacio Z?</h2>
+      <ul>
+        <li>Soluciones diseñadas para la realidad de empresas en América Latina</li>
+        <li>Parte del ecosistema ZIGLA, con foco en impacto y datos</li>
+        <li>Experiencia práctica y cercana, sin lenguaje técnico innecesario</li>
+      </ul>
+      <div class="zigla-note">
+        Después de 16 años trabajando con organizaciones del sector de impacto en América Latina, en ZIGLA decidimos compartir nuestro conocimiento y experiencia con empresas que buscan digitalizarse y tomar mejores decisiones con datos. Así nació Espacio Z.
+      </div>
+    </div>
+    <img src="https://images.pexels.com/photos/3861446/pexels-photo-3861446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Personas colaborando con tecnología digital">
+  </section>
+
+  <footer id="contacto">
+    <p>© 2025 Espacio Z | Contacto: info@espacioz.com</p>
+  </footer>
+</body>
+</html>
